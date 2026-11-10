@@ -168,6 +168,25 @@ function QuickPanel:openPrevious()
     end
 end
 
+-- Go to the home folder from anywhere: from a book, close it first.
+function QuickPanel:goHome()
+    if self._qp_dialog then
+        UIManager:close(self._qp_dialog)
+        self._qp_dialog = nil
+    end
+    UIManager:nextTick(function()
+        local FileManager = require("apps/filemanager/filemanager")
+        if self.ui.document then
+            -- closes the book and opens the file browser (in the book's folder)
+            Dispatcher:execute({ filemanager = true })
+        end
+        local fm = FileManager.instance
+        if fm then
+            fm:onHome() -- KOReader's own "home": offers to set one if there is none
+        end
+    end)
+end
+
 -- panel -----------------------------------------------------------------
 
 function QuickPanel:onShowQuickPanel()
@@ -215,6 +234,7 @@ function QuickPanel:onShowQuickPanel()
         b("Ngủ", function() self:run("suspend") end),
     })
     table.insert(rows, {
+        b("Thư mục chính", function() self:goHome() end),
         b("Thoát KOReader", function() self:run("exit") end),
     })
 

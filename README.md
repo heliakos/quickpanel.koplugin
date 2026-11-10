@@ -18,7 +18,7 @@ Screenshots from the KOReader v2026.07.1 emulator at Kindle Paperwhite 4 resolut
 | Table of contents* | Smaller font* | Larger font* |
 | History | Previous book | Calibre wireless |
 | Rotate | Full menu | Sleep |
-| Exit KOReader | | |
+| Home folder | Exit KOReader | |
 
 \* only while a book is open.
 

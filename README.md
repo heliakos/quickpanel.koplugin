@@ -3,7 +3,11 @@
 An Android-style quick settings sheet for [KOReader](https://github.com/koreader/koreader).
 Swipe down from the top edge to open it. Tapping the top edge still opens the normal KOReader menu.
 
-![Quick panel in the reader](docs/screenshot.png)
+| Reading | Night mode | File browser |
+|---|---|---|
+| ![Quick panel while reading](docs/screenshot.png) | ![Quick panel in night mode](docs/night.png) | ![Quick panel in the file browser](docs/filebrowser.png) |
+
+Screenshots from the KOReader v2026.07.1 emulator at Kindle Paperwhite 4 resolution (1072×1448).
 
 ## What is on the panel
 

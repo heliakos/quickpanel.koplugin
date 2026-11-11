@@ -26,6 +26,10 @@ The title line shows the time, battery level and Wi-Fi state.
 Brightness buttons update in place; every other button closes the panel and runs the action.
 The interface text is Vietnamese.
 
+## Guides
+
+- [Jailbreak a Kindle Paperwhite 4 and install KOReader](https://github.com/heliakos/quickpanel.koplugin/wiki/Jailbreak-Kindle-PW4) (Vietnamese): SpiderCat on firmware 5.18.1.1.1, KPM, KFX to EPUB with Calibre, no-framework mode, Calibre wireless.
+
 ## Install
 
 1. Copy this folder to `koreader/plugins/quickpanel.koplugin` on the device
